@@ -1,0 +1,23 @@
+from tkinter import*
+import random
+a=Tk()
+a.title("TRUEFRIENDS")
+a.configure(bg="yellow")
+lb=Label(a,text="FRIENDSHIP SCORE",bg="yellow",font=("Arial bold",20))
+lb.grid(column=1,row=0)
+lb1=Label(a,text="your name",bg="yellow")
+lb1.grid(column=0,row=1)
+lb2=Label(a,text="friend name",bg="yellow")
+lb2.grid(column=0,row=2)
+e1=Entry(a,width=15)
+e1.grid(column=1,row=1)
+e2=Entry(a,width=15)
+e2.grid(column=1,row=2)
+lb3=Label(a,text="",font=("Arial bold",10),fg="red")
+lb3.grid(column=1,row=3)
+def c():
+    v=random.randint(1,100)
+    lb3.configure(text="Friendship % :"+str(v))
+b=Button(a,text="caluculate",command=c)
+b.grid(column=1,row=4)
+a.mainloop()
