@@ -24,5 +24,5 @@ A collection of programs created using the Python library Tkinter for building g
 
  ## Program 6: reg.py
  
-- Description:This program is designed to create a regestration form 
+- Description:This program is designed to create a regestration form which contains, details and other fields
  
